@@ -1,24 +1,39 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
 
+import item1 from './assets/1.jpg';
+import item2 from './assets/2.jpg';
+import item3 from './assets/3.jpg';
+import item4 from './assets/4.jpg';
+
+const imgs = [
+  item1,
+  item2,
+  item3,
+  item4
+]
+
 function App() {
+  const [index, setIndex] = useState(0);
+
+  const handlePrev = () => {
+    setIndex((index - 1) % 4);
+  };
+  const handleNext = () => {
+    setIndex((index + 1) % 4);
+  };
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="Slider" style={{
+        background: `url(${imgs[index < 0 ? index + 4 : index]})`, 
+      }}>
+
+        <div className='btns'>
+          <button onClick={handlePrev}>Prev</button>
+          <button onClick={handleNext}>Next</button>
+        </div>
+      </div>
     </div>
   );
 }
