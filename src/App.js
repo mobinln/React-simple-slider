@@ -5,7 +5,6 @@ import item1 from './assets/1.jpg';
 import item2 from './assets/2.jpg';
 import item3 from './assets/3.jpg';
 import item4 from './assets/4.jpg';
-import item5 from './assets/4.jpg';
 
 const imgs = [
   item1,
