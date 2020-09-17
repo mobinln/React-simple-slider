@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 # React-simple-slider
 A really simple slideshow component for React js
 I just use React js for making this slider
 Of course you can use whatever animation library such as Framer or React spring if you want
 
+>>>>>>> 1bcf660aebe3c5bbd00ca7f620a7da5d2e98b324
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -72,4 +75,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `yarn build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+<<<<<<< HEAD
+=======
 >>>>>>> Initialize project using Create React App
+>>>>>>> 1bcf660aebe3c5bbd00ca7f620a7da5d2e98b324
