@@ -34,7 +34,7 @@ function App() {
           </button>
           <button onClick={handleNext}>
             <span role='img' aria-label='next'>
-              {'>'}
+              👉
             </span>
           </button>
         </div>
