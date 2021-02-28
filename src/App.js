@@ -27,8 +27,16 @@ function App() {
         }}
       >
         <div className="btns">
-          <button onClick={handlePrev}>👈</button>
-          <button onClick={handleNext}>👉</button>
+          <button onClick={handlePrev}>
+            <span role='img' aria-label='previous'>
+              👈
+            </span>
+          </button>
+          <button onClick={handleNext}>
+            <span role='img' aria-label='next'>
+              👉
+            </span>
+          </button>
         </div>
       </div>
     </div>
